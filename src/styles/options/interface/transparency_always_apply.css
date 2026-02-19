@@ -1,0 +1,8 @@
+/* Header */
+[class*="aQnHU"] {
+    background-color: var(--top_bar_transparency);
+}
+
+[class*="aQnHU"]::before {
+    background-color: transparent;
+}

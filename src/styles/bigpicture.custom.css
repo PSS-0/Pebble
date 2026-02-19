@@ -1,0 +1,112 @@
+:root {
+    --SLH-lift-hero-px: 0;
+}
+
+/* RecentGamesInnerContainer */
+[class*="mOe-X"] {
+    /* Screen Height - (Header + Footer) - header padding - friend bar + extra push */
+    height: calc(100vh - 80px - 14px - 58px + 40px);
+}
+
+/* RecentGamesInnerContainer -> BasicGameCarousel (The list of games) */
+[class*="mOe-X"] [class*="fUlcQ"] {
+    bottom: 0px;
+    position: absolute !important;
+}
+
+/* CarouselGameLabelWrapper (Game Title above cover) */
+[class*="3yiY3"] {
+    position: absolute;
+    top: -52px;
+    padding-top: 0;
+}
+
+/* BasicGameCarousel */
+[class*="fUlcQ"] {
+    padding-top: 85px;
+}
+
+/* RecentGamesHeader (The "Recent Games" text) */
+[class*="eny7R"] {
+    display: none;
+}
+
+/* BasicGameCarousel -> Scroll Container */
+[class*="fUlcQ"]>.ReactVirtualized__Grid__innerScrollContainer {
+    height: 221px !important;
+}
+
+/* TabbedContent */
+[class*="tyMo1"] {
+    margin-top: 0px;
+}
+
+.RecentGamesBackgroundContainer,
+.RecentGamesBackgroundImages {
+    bottom: var(--SLH-lift-hero-px);
+}
+
+:root {
+    --CGV-play-bar-height: 80px;
+    --CGV-footer-height: 40px;
+    --CGV-play-anim-height: 58vw;
+    --CGV-top-panel-height: calc(100vh - var(--CGV-play-bar-height) - var(--CGV-footer-height));
+    --CGV-image-height: calc(100vh - var(--CGV-footer-height));
+}
+
+/* TopCapsule (Main game detail container) */
+.BasicUI [class*="lDmIP"] {
+    height: var(--CGV-top-panel-height);
+}
+
+/* HeaderBackgroundImage */
+[class*="BSkZa"] {
+    height: var(--CGV-image-height);
+}
+
+/* TopCapsule.FullscreenEnterStart */
+.BasicUI [class*="lDmIP"][class*="wRCNa"] {
+    animation-name: makethinggodown;
+    animation-duration: 1s;
+}
+
+/* TopCapsule.FullscreenEnterDone */
+.BasicUI [class*="lDmIP"][class*="f0thD"] {
+    height: var(--CGV-play-anim-height);
+}
+
+/* TitleSection */
+[class*="gDJj4"] {
+    padding: 0;
+}
+
+/* SVGTitle */
+[class*="xpCDS"] {
+    background: rgba(14, 20, 27, .5);
+    padding-top: 10px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+    margin-bottom: -6px;
+    width: 100%;
+}
+
+@keyframes makethinggodown {
+    from {
+        height: var(--CGV-top-panel-height);
+    }
+
+    to {
+        height: var(--CGV-play-anim-height);
+    }
+}
+
+/* Top Bar Transparency Base Logic */
+:root {
+    /* Default transparency 50% */
+    --top_bar_transparency: rgba(0, 0, 0, 0.5);
+}
+
+/* Header (aQnHU) */
+[class*="aQnHU"]::before {
+    background-color: var(--top_bar_transparency);
+}

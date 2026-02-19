@@ -1,0 +1,82 @@
+:root {
+  --round-radius-size: none;
+}
+
+.gpfocus /* BasicPartnerEvent */
+[class*="8mCYB"] {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: calc(var(--round-radius-size) + 2px);
+  margin: 54px auto 14px auto;
+}
+
+/* FocusRing */
+[class*="PhzKT"] {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: calc(var(--round-radius-size) + 2px);
+  margin: -2px;
+  animation: focusring_growOutline_Z3LxS_alt 0.4s ease,
+    focusring_fadeOutline_2hZu3_alt 0.4s ease,
+    focusring_blinker_3wFMM_alt 1.2s ease-in-out 0.4s 20;
+}
+
+@keyframes focusring_growOutline_Z3LxS_alt {
+  0% {
+    border: 12px solid;
+    margin: -12px;
+    border-radius: calc(var(--round-radius-size) + 10px);
+  }
+  100% {
+    border: 2px solid;
+    margin: -2px;
+    border-radius: calc(var(--round-radius-size) + 2px);
+  }
+}
+@keyframes focusring_fadeOutline_2hZu3_alt {
+  0% {
+    border-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+@keyframes focusring_blinker_3wFMM_alt {
+  50% {
+    border: 2px solid rgba(255, 255, 255, 0.24);
+  }
+}
+
+/* exceptions */
+/* NoCommentSupport */
+[class*="J3Eow"]
+  > /* EventBody */
+[class*="lHXhT"]
+  > .Panel
+  > [class*="hbWz3"]
+  > /* FocusRing */
+[class*="PhzKT"],
+/* ChooseBindingContainer */
+[class*="RUyJG"]
+  > /* GamepadTabbedPage */
+[class*="KtF00"]
+  > /* TabContents */
+[class*="6gl_T"]
+  > /* TransitionGroup */
+[class*="ymIpz"]
+  > /* ContentWrapper */
+[class*="J7-Hk"]
+  > .Panel
+  > /* TabContentsScroll */
+[class*="GiK01"]
+  > [class*="hbWz3"]
+  > /* FocusRing */
+[class*="PhzKT"] {
+  border: none;
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0px;
+  margin: 0px;
+  animation: focusring_growOutline_Z3LxS 0.4s ease,
+    focusring_fadeOutline_2hZu3 0.4s ease,
+    focusring_blinker_3wFMM 1.2s ease-in-out 0.4s 20;
+}

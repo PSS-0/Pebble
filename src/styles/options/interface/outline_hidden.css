@@ -1,0 +1,11 @@
+.BasicUI /* LibraryItemBox */
+[class*="Z_NBC"].Focusable:focus {
+  outline: none;
+  animation: none;
+}
+
+/* FocusRing */
+[class*="PhzKT"] {
+  outline: none;
+  animation: none;
+}

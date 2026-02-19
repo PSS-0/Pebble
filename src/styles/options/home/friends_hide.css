@@ -1,0 +1,5 @@
+/* RecentGamesInnerContainer */
+[class*="mOe-X"] {
+    /* Screen Height - (Header + Footer) - header padding + extra push */
+    height: calc(100vh - 80px - 14px + 40px);
+}

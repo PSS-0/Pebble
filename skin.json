@@ -1,0 +1,435 @@
+{
+    "name": "Pebble",
+    "description": "A minimal and clean Big Picture Mode theme featuring a modern rounded aesthetic, an immersive home screen layout, and a minimal distraction-free game view.",
+    "author": "PSS-0",
+    "version": "1.0.0",
+    "Conditions": {
+        "Corner Radius": {
+            "tab": "Interface",
+            "default": "10px",
+            "description": "Controls the roundness of UI elements.",
+            "values": {
+                "0px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_0px.css"
+                    }
+                },
+                "5px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_5px.css"
+                    }
+                },
+                "10px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_10px.css"
+                    }
+                },
+                "15px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_15px.css"
+                    }
+                },
+                "20px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_20px.css"
+                    }
+                }
+            }
+        },
+        "Focus Outline": {
+            "tab": "Interface",
+            "default": "Rounded",
+            "description": "Style of the focus ring.",
+            "values": {
+                "Rounded": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/outline_round.css"
+                    }
+                },
+                "Square": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/outline_square.css"
+                    }
+                },
+                "Hidden": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/outline_hidden.css"
+                    }
+                }
+            }
+        },
+        "Big Picture Styling": {
+            "tab": "Interface",
+            "default": "Rounded",
+            "description": "Apply rounded aesthetic to Big Picture Mode.",
+            "values": {
+                "Rounded": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/bpm_rounded.css"
+                    }
+                },
+                "Default (Square)": {}
+            }
+        },
+        "Desktop Styling": {
+            "tab": "Interface",
+            "default": "Rounded",
+            "description": "Apply rounded aesthetic to Desktop Mode.",
+            "values": {
+                "Rounded": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam$"
+                        ],
+                        "src": "src/styles/options/interface/desktop_rounded.css"
+                    }
+                },
+                "Default (Square)": {}
+            }
+        },
+        "Friends Widget": {
+            "tab": "Home",
+            "default": "Show",
+            "description": "Toggle visibility of the friends bar on the home screen.",
+            "values": {
+                "Show": {},
+                "Hide": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/friends_hide.css"
+                    }
+                }
+            }
+        },
+        "Home Filter": {
+            "tab": "Home",
+            "default": "Default",
+            "description": "Toggle the dark filter on the home screen.",
+            "values": {
+                "Default": {},
+                "Remove Filter": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/no_home_filter.css"
+                    }
+                }
+            }
+        },
+        "Vertical Offset": {
+            "tab": "Home",
+            "default": "0px",
+            "description": "Adjust the vertical position of the hero image.",
+            "values": {
+                "0px": {},
+                "10px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/lift_10px.css"
+                    }
+                },
+                "20px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/lift_20px.css"
+                    }
+                },
+                "30px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/lift_30px.css"
+                    }
+                },
+                "40px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/lift_40px.css"
+                    }
+                },
+                "50px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/home/lift_50px.css"
+                    }
+                }
+            }
+        },
+        "Action Bar Style": {
+            "tab": "Library",
+            "default": "Transparent",
+            "description": "Style of the game action bar.",
+            "values": {
+                "Transparent": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/actionbar_transparent.css"
+                    }
+                },
+                "Blur": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/actionbar_blur.css"
+                    }
+                },
+                "Connected": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/actionbar_connected.css"
+                    }
+                }
+            }
+        },
+        "Artwork Alignment": {
+            "tab": "Library",
+            "default": "Zoom-Center",
+            "description": "Alignment of the game header artwork.",
+            "values": {
+                "Zoom-Center": {},
+                "Zoom-Left": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/align_left.css"
+                    }
+                },
+                "Zoom-Right": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/align_right.css"
+                    }
+                },
+                "Contain": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/align_contain.css"
+                    }
+                },
+                "Stretch": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/align_stretch.css"
+                    }
+                }
+            }
+        },
+        "Cloud Sync Icon": {
+            "tab": "Library",
+            "default": "Hide",
+            "description": "Toggle visibility of the Steam Cloud sync icon.",
+            "values": {
+                "Show": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/cloud_show.css"
+                    }
+                },
+                "Hide": {}
+            }
+        },
+        "Header Layout": {
+            "tab": "Library",
+            "default": "Standard",
+            "description": "Layout of the header area.",
+            "values": {
+                "Full Height": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/header_full.css"
+                    }
+                },
+                "Standard": {}
+            }
+        },
+        "Logo Anchoring": {
+            "tab": "Library",
+            "default": "Pinned",
+            "description": "Pin the game logo to the bottom of the header.",
+            "values": {
+                "Pinned": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/library/logo_pinned.css"
+                    }
+                },
+                "Free": {}
+            }
+        },
+        "Clean Game Launch": {
+            "tab": "Library",
+            "default": "On",
+            "description": "Minimalist game launch screen with animations.",
+            "values": {
+                "On": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/library/clean_game_launch.css"
+                    }
+                },
+                "Off": {}
+            }
+        },
+        "Transparency": {
+            "tab": "Interface",
+            "default": "50%",
+            "description": "Adjust top bar transparency (Desktop Mode).",
+            "values": {
+                "0%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.0.css"
+                    }
+                },
+                "10%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.1.css"
+                    }
+                },
+                "20%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.2.css"
+                    }
+                },
+                "30%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.3.css"
+                    }
+                },
+                "40%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.4.css"
+                    }
+                },
+                "50%": {},
+                "60%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.6.css"
+                    }
+                },
+                "70%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.7.css"
+                    }
+                },
+                "80%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.8.css"
+                    }
+                },
+                "90%": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_0.9.css"
+                    }
+                }
+            }
+        },
+        "Always Add Transparency": {
+            "tab": "Interface",
+            "default": "No",
+            "description": "Force transparency on top bar.",
+            "values": {
+                "Yes": {
+                    "TargetCss": {
+                        "affects": [
+                            "^Steam Big Picture Mode$"
+                        ],
+                        "src": "src/styles/options/interface/transparency_always_apply.css"
+                    }
+                },
+                "No": {}
+            }
+        }
+    },
+    "Patches": [
+        {
+            "MatchRegexString": "^Steam Big Picture Mode$",
+            "TargetCss": "src/styles/bigpicture.custom.css"
+        }
+    ]
+}

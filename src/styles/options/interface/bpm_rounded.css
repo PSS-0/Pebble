@@ -1,0 +1,607 @@
+:root {
+  --round-radius-size: none;
+}
+
+/* General */
+.DialogInput {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}
+button/* Button */
+[class*="IBNAI"].DialogButton,
+button/* Button */
+[class*="IBNAI"].DialogButton.Primary,
+button/* Button */
+[class*="IBNAI"].DialogButton:enabled,
+button/* Button */
+[class*="IBNAI"].DialogButton:enabled.Primary,
+button/* Button */
+[class*="IBNAI"].DialogButton:active,
+button/* Button */
+[class*="IBNAI"].DialogButton:active.Primary,
+button/* Button */
+[class*="IBNAI"].DialogButton:hover,
+button/* Button */
+[class*="IBNAI"].DialogButton:hover.Primary,
+button/* Button */
+[class*="IBNAI"].DialogButton:enabled:active:hover,
+button/* Button */
+[class*="IBNAI"].DialogButton:enabled:active:hover.Primary,
+div/* contextMenuContents */
+[class*="cAsZz"] {
+  border-radius: var(--round-radius-size);
+}
+.ModalPosition_Content
+  > div:not(.ModalPosition_TopBar):not(.ModalPosition_Dismiss) {
+  border-radius: var(--round-radius-size);
+}
+
+/* Recent games and library */
+/* Image */
+[class*="ApCDR"]:not(
+    /* RecentGamesBackgroundImage */
+[class*="X8IHE"]
+  ) {
+  border-radius: var(--round-radius-size);
+}
+/* LibraryItemBox */
+[class*="Z_NBC"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* LibraryItemBox */
+[class*="Z_NBC"]::after {
+  border-radius: var(--round-radius-size);
+}
+/* ResultTemplateImage */
+[class*="wAMFj"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* GreyBackground */
+[class*="s1t2E"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* Collection */
+[class*="0rAxb"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden; /* This is to prevent the collection image from overflowing the collection box */
+}
+/* CompatFilterDialog */
+[class*="X87K5"] {
+  border-radius: var(--round-radius-size);
+}
+/* CompatFilterDialogRow */
+[class*="XHSAc"]:nth-child(1) {
+  border-radius: var(--round-radius-size) var(--round-radius-size) 0px 0px;
+}
+/* CompatFilterDialogRow */
+[class*="XHSAc"]:nth-child(4) {
+  border-radius: 0px 0px var(--round-radius-size) var(--round-radius-size);
+}
+/* CompatFilterDialogRow */
+[class*="XHSAc"]:last-child {
+  border-radius: var(--round-radius-size);
+}
+/* CompatFilterDialogRow */
+[class*="XHSAc"]:nth-of-type(
+    1
+  ):nth-last-child(3) {
+  border-radius: var(--round-radius-size) !important;
+}
+.BasicUI
+  /* Container */
+[class*="8zNDI"]
+  /* FilterArea */
+[class*="J2M2H"]
+  /* FilterBucket */
+[class*="xiBIc"] {
+  border-radius: var(--round-radius-size);
+}
+/* AppPortraitBanner */
+[class*="aFdYI"] {
+  border-radius: var(--round-radius-size);
+}
+/* AppGridFilterHeader */
+[class*="Ub1ji"] {
+  border-radius: var(--round-radius-size);
+}
+/* TextBoxCarouselContents */
+[class*="KlXaf"] {
+  border-radius: var(--round-radius-size);
+}
+/* DiscoveryQueueWidgetCtn */
+[class*="no7NX"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* What's new */
+/* Darkener */
+[class*="wpeO1"] {
+  border-radius: var(--round-radius-size) var(--round-radius-size) 0px 0px;
+}
+/* EventImage */
+[class*="cocSl"] {
+  border-radius: var(--round-radius-size) var(--round-radius-size) 0px 0px;
+}
+/* EventPreviewOuterWrapper */
+[class*="z73CJ"]:hover
+  /* EventImage */
+[class*="cocSl"],
+.gpfocus /* EventImage */
+[class*="cocSl"] {
+  border-radius: calc(var(--round-radius-size) + 10px)
+    calc(var(--round-radius-size) + 10px) 0px 0px;
+}
+/* EventInfo */
+[class*="xNwRd"] {
+  border-radius: 0px 0px var(--round-radius-size) var(--round-radius-size);
+}
+/* RecentlyCompletedItem */
+[class*="6Bugz"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}
+/* MarketingMessage */
+[class*="fU3SX"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}
+/* News articles */
+/* PartnerEvent */
+[class*="x-_GE"] {
+  border-radius: var(--round-radius-size) !important;
+  overflow: hidden;
+}
+/* Button */
+[class*="IBNAI"]/* Icon */
+[class*="pTeMT"] {
+  border-radius: var(--round-radius-size) !important;
+}
+/* VoteContainer */
+[class*="8n7NB"],
+/* DiscussContainer */
+[class*="o_ycv"],
+[class*="6WVEN"] {
+  border-radius: var(--round-radius-size) !important;
+}
+
+/* PartnerEventMediumImage_Image */
+[class*="24Yrc"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Trending among friends (annoying to mess with outlines with, sorry if this is confusing lol) */
+/* GameCapsule */
+[class*="ju3jk"] /* BottomBar */
+[class*="w4BjY"] {
+  height: 30px;
+  border-radius: 0px 0px var(--round-radius-size) var(--round-radius-size);
+}
+/* GameCapsule */
+[class*="ju3jk"]
+  > /* GreyBackground */
+[class*="s1t2E"]
+  > img/* Image */
+[class*="ApCDR"]/* Visibility */
+[class*="KW6am"]/* Visible */
+[class*="E-Rnw"] {
+  border-radius: 0px;
+}
+/* GameCapsule */
+[class*="ju3jk"] > /* GreyBackground */
+[class*="s1t2E"] {
+  border-radius: var(--round-radius-size) var(--round-radius-size) 0px 0px;
+  overflow: hidden;
+}
+/* GameCapsule */
+[class*="ju3jk"] {
+  background-color: #00000000;
+}
+[class*="k7IWt"] {
+  margin-left: 10px;
+}
+/* InLibrary */
+[class*="8p9s9"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Friends */
+/* FavoriteFriend */
+[class*="5oizM"],
+/* GoToFriends */
+[class*="6d-sS"] {
+  border-radius: var(--round-radius-size);
+}
+/* InGameGame */
+[class*="lKsab"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI
+  /* ActivityAchievementUnlocked */
+[class*="m6lPI"]
+  /* PrimaryAchievement */
+[class*="RtI5q"] {
+  border-radius: var(--round-radius-size);
+}
+/* Event */
+[class*="_mMw5"] {
+  border-radius: var(--round-radius-size);
+  border-image: none;
+  overflow: hidden;
+}
+/* PlayedGameFirstTime */
+[class*="-ILRM"]
+  > /* EventHeadline */
+[class*="qQIEl"]:first-child:nth-last-child(2),
+/* ReceivedNewGame */
+[class*="xl7as"]
+  > /* EventHeadline */
+[class*="qQIEl"]:only-child,
+/* AddedGameToWishlist */
+[class*="JaZSB"]
+  > /* EventHeadline */
+[class*="qQIEl"]:only-child {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* Event */
+[class*="_mMw5"] /* EventBody */
+[class*="lHXhT"] {
+  border-radius: 0px 0px var(--round-radius-size) var(--round-radius-size);
+}
+.BasicUI
+  /* ActivityAchievementUnlocked */
+[class*="m6lPI"]
+  /* PrimaryAchievement */
+[class*="RtI5q"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI
+  /* ScreenshotCarousel */
+[class*="HI2Uo"]
+  /* CarouselThumbs */
+[class*="CyqGO"]
+  /* CarouselThumb */
+[class*="Zm8up"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}
+/* ResultTemplateImage */
+[class*="wAMFj"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}
+.FriendPickerFriendList,
+.FriendPicker_SuggestedFriend.gpfocus .friend,
+.FriendPicker ._DialogInputContainer {
+  border-radius: var(--round-radius-size);
+}
+
+/* Game details */
+.BasicUI /* SummaryCarouselContainer */
+[class*="H5FXi"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI
+  /* AppDetailsSectionContainer */
+[class*="1e5lm"]/* RightColumnSection */
+[class*="AM2_t"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* SummaryAchievement */
+[class*="5lhNI"] {
+  border-radius: var(--round-radius-size);
+}
+/* PostTextEntry */
+[class*="THv2m"] /* PostTextEntryArea */
+[class*="X_d-X"] {
+  border-radius: var(--round-radius-size);
+}
+/* AchievementCarouselItem */
+[class*="T-YNI"]/* Detailed */
+[class*="sO-Wx"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* CommunityItem */
+[class*="2zQuW"] {
+  border-radius: var(--round-radius-size);
+}
+/* ArtItem */
+[class*="DNmzg"] {
+  border-radius: var(--round-radius-size) var(--round-radius-size) 0px 0px;
+}
+/* DeckVerifiedInfo */
+[class*="7uSDG"]
+  /* Details */
+[class*="iJLZI"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* Anchor */
+[class*="O5I9V"] {
+  border-radius: var(--round-radius-size);
+}
+/* DeckVerifiedFeedbackConfirmationContainer */
+[class*="zXGts"],
+/* DeckVerifiedFeedbackContainer */
+[class*="-kG_6"] {
+  border-radius: var(--round-radius-size);
+}
+/* DeckVerifiedFeedbackConfirmationContainer */
+[class*="zXGts"]
+  /* DeckVerifiedFeedbackButton */
+[class*="9_cVh"],
+/* DeckVerifiedFeedbackContainer */
+[class*="-kG_6"]
+  /* DeckVerifiedFeedbackButton */
+[class*="9_cVh"] {
+  border-radius: var(--round-radius-size);
+}
+.BasicUI /* Highlight */
+[class*="MT1CG"] {
+  border-radius: var(--round-radius-size) var(--round-radius-size) 0 0;
+}
+/* NoActivity */
+[class*="pSupb"],
+/* Loading */
+[class*="3kqfD"] {
+  border-radius: var(--round-radius-size);
+}
+/* DeckVerifiedInfo */
+[class*="7uSDG"] {
+  border-radius: var(--round-radius-size);
+}
+/* AppActionButton */
+[class*="scNTt"]/* PlayButtonContainer */
+[class*="KTI16"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}
+/* AppButtons */
+[class*="b6n-4"] /* This makes the button a circle */
+  /* MenuButton */
+[class*="b11Q-"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Item */
+[class*="VVoJl"],
+/* Item */
+[class*="VVoJl"] /* GreyBackground */
+[class*="s1t2E"],
+/* Item */
+[class*="VVoJl"] img,
+/* Remainder */
+[class*="Rwras"] {
+  border-radius: var(--round-radius-size) !important;
+}
+
+/* Gloss */
+[class*="yLXE-"] {
+  background: none !important;
+}
+
+/* SummaryScreenshot */
+[class*="XOaHh"],
+/* SummaryScreenshot */
+[class*="XOaHh"] > img:first-child,
+/* Thumbnail */
+[class*="1qpQ8"],
+/* Thumbnail */
+[class*="1qpQ8"] > img:first-child {
+  border-radius: var(--round-radius-size);
+}
+
+button/* AppDetailsButton */
+[class*="boheb"]/* BottomRight */
+[class*="xNnMe"].DialogButton/* Button */
+[class*="IBNAI"],
+button/* FetchMoreContainer */
+[class*="vc_nj"].DialogButton/* Button */
+[class*="IBNAI"].Focusable {
+  border-radius: var(--round-radius-size) !important;
+}
+
+/* Media */
+/* ImageContainer */
+[class*="_efqR"] {
+  border-radius: var(--round-radius-size);
+}
+/* Screenshot */
+[class*="PPKK_"] {
+  border-radius: calc(var(--round-radius-size) + 4px);
+}
+
+/* Downloads */
+[class*="T4Ggi"]/* Button */
+[class*="IBNAI"].DialogButton[type="button"], /* This makes the button a circle */
+/* SectionItem */
+[class*="zPf5r"],
+/* RemoveAllButton */
+[class*="BxohI"] {
+  border-radius: var(--round-radius-size) !important;
+}
+[class*="enYFg"]
+  > /* SectionList */
+[class*="czpZi"]
+  > /* SectionItemWrapper */
+[class*="-uyZo"]
+  > /* SectionItem */
+[class*="zPf5r"] {
+  border-radius: 0px !important;
+}
+/* HeroContainer */
+[class*="PVYES"] > /* GreyBackground */
+[class*="s1t2E"],
+/* HeroContainer */
+[class*="PVYES"]
+  > /* GreyBackground */
+[class*="s1t2E"]
+  > /* Image */
+[class*="ApCDR"] {
+  border-radius: 0px !important;
+}
+
+/* Mods */
+.CssLoader_ThemeBrowser_SingleItem_BgImage,
+.CssLoader_ThemeBrowser_SingleItem_BgOverlay {
+  border-radius: var(--round-radius-size) !important;
+  overflow: hidden;
+}
+
+/* Main-Menu Guides */
+/* GuideListItemBase */
+[class*="p4RKq"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Main-Menu Achievements */
+/* OverlayAchievements */
+[class*="k4l97"]
+  /* AchievementListItemBase */
+[class*="67a9M"],
+/* OverlayAchievements */
+[class*="k4l97"]
+  /* GlobalAchievementListItem */
+[class*="n2HNO"],
+/* OverlayAchievements */
+[class*="k4l97"]
+  /* AchievementList */
+[class*="wtuH0"],
+/* OverlayAchievements */
+[class*="k4l97"]
+  /* StatsBlock */
+[class*="R9wJi"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Achievements Page */
+
+/* StatsBlock */
+[class*="R9wJi"],
+/* AchievementTabs */
+[class*="a5htx"]
+  /* AchievementListItemBase */
+[class*="67a9M"],
+/* AchievementTabs */
+[class*="a5htx"]
+  /* GlobalAchievementListItem */
+[class*="n2HNO"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* CompareButtonContainer */
+[class*="2pecg"]
+  button/* DropDownControlButton */
+[class*="4VhOr"].DialogButton/* Button */
+[class*="IBNAI"].Focusable {
+  border-radius: var(--round-radius-size) !important;
+}
+
+/* Exit Game Dialog */
+/* GamepadDialogContent */
+[class*="34VFQ"]:not(
+    /* PagedSettingsDialog_PageContent */
+[class*="h0Dvp"]
+  ) {
+  border-radius: var(--round-radius-size);
+}
+
+/* Settings */
+.DialogCheckbox_Container,
+/* EditableValue */
+[class*="yG0cJ"] {
+  border-radius: var(--round-radius-size) !important;
+}
+
+/* ControlLabel */
+[class*="4GSHi"],
+/* ConfigurationButton */
+[class*="g0AXj"], /* This is selecting a controller layout */
+/* CommunityConfigsCallout */
+[class*="PTN9s"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* AppProperties */
+[class*="V2Gbz"]
+  .DialogBody
+  /* TopGapSmall */
+[class*="fmCWt"] {
+  margin-top: 0px !important;
+}
+
+/* Active */
+[class*="3yPJz"] {
+  border-radius: var(--round-radius-size);
+}
+
+.RadioButton {
+  border-radius: var(--round-radius-size);
+}
+
+/* Group */
+[class*="ekVSw"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Options Container  */
+/* 
+  The majority of styles in this section were removed due to each container 
+  lacking the specificity needed to properly style them
+*/
+/* contextMenuContents */
+[class*="cAsZz"]:first-child
+  /* ContextMenuSeparator */
+[class*="FI0XV"] {
+  height: 0px;
+}
+
+/* contextMenuItem */
+[class*="b4oMA"]:first-child {
+  border-top-left-radius: var(--round-radius-size);
+  border-top-right-radius: var(--round-radius-size);
+}
+
+/* contextMenuContents */
+[class*="cAsZz"] > :last-child {
+  border-bottom-left-radius: var(--round-radius-size);
+  border-bottom-right-radius: var(--round-radius-size);
+}
+
+/* contextMenuContents */
+[class*="cAsZz"] {
+  margin-left: 5px;
+}
+
+.contextMenuGameOptions {
+  border-radius: 0px !important;
+}
+
+.BasicUI /* ButtonChild */
+[class*="5H4kX"] {
+  overflow: hidden;
+}
+.BasicUI /* ButtonChild */
+[class*="5H4kX"].Focusable:focus:focus::after {
+  transform: scaleX(1.1);
+}
+
+/* Activate Product Dialog */
+/* ProductActivationInfoContainer */
+[class*="ldf9T"] {
+  border-radius: var(--round-radius-size);
+}
+
+/* Add Support for ProtonDB Badge plugin by OMGDuke */
+.protondb-decky-indicator {
+  border-radius: var(--round-radius-size) !important;
+}
+
+/* Download icon and bar */
+/* HeaderDownloadContainer */
+[class*="1-Gzn"] [class*="BEUBw"] {
+  border-radius: var(--round-radius-size) !important;
+}
+/* HeaderDownloadProgressBarBackground */
+[class*="KH4Lq"] {
+  border-radius: var(--round-radius-size);
+  overflow: hidden;
+}

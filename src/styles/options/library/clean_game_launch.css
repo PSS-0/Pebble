@@ -1,0 +1,52 @@
+/* ControlOverviewContainer */
+[class*="0Wjq4"],
+/* Divider */
+[class*="ymwUq"] {
+    display: none;
+}
+
+/* LogoOrTitleContainer */
+[class*="yGdFz"] {
+    animation-name: slide;
+    animation-duration: 800ms;
+    min-height: 100%;
+    height: 90vh;
+}
+
+/* LaunchStatus */
+[class*="iaQpY"] {
+    text-transform: uppercase;
+    animation: slide2 1.35s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100vh) scaleY(2.5) scaleX(.2);
+        transform-origin: 50% 0;
+        filter: blur(40vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateY(100vh) scaleY(2.5) scaleX(.2);
+        transform-origin: 50% 100%;
+        filter: blur(40vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scaleY(1) scaleX(1);
+        transform-origin: 50% 50%;
+        filter: blur(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,28 @@
+/* CloudStatusRow */
+[class*="6qeRL"] {
+    width: fit-content;
+    position: absolute;
+    top: 28px;
+    right: 152px;
+    transform: scale(2);
+}
+
+/* CloudStatusLabel */
+[class*="GHA1d"] {
+    display: none;
+}
+ /* CloudStatusIcon */
+[class*="1Ed6V"] > svg {
+    margin: 0 4px 4px 4px;
+}
+
+/* CloudStatusRow */
+[class*="6qeRL"]:not(.gpfocus) /* CloudStatusIcon */
+[class*="1Ed6V"] > svg {
+    color: white;
+}
+
+/* CloudSyncProblem */
+[class*="Q2qHo"]:not(.gpfocus) {
+    background-color: #ACB2C924;
+}
