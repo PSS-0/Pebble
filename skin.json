@@ -17,6 +17,14 @@
                         "src": "src/styles/options/interface/radius_0px.css"
                     }
                 },
+                "3px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_3px.css"
+                    }
+                },
                 "5px": {
                     "TargetCss": {
                         "affects": [
@@ -47,6 +55,14 @@
                             ".*"
                         ],
                         "src": "src/styles/options/interface/radius_20px.css"
+                    }
+                },
+                "30px": {
+                    "TargetCss": {
+                        "affects": [
+                            ".*"
+                        ],
+                        "src": "src/styles/options/interface/radius_30px.css"
                     }
                 }
             }

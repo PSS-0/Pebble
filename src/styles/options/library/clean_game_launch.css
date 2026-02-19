@@ -8,15 +8,15 @@
 /* LogoOrTitleContainer */
 [class*="yGdFz"] {
     animation-name: slide;
-    animation-duration: 800ms;
-    min-height: 100%;
+    animation-duration: 0.8s;
     height: 90vh;
 }
 
 /* LaunchStatus */
 [class*="iaQpY"] {
     text-transform: uppercase;
-    animation: slide2 1.35s;
+    animation-name: slide2;
+    animation-duration: 1.35s;
 }
 
 @keyframes slide {
